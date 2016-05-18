@@ -1,6 +1,7 @@
 typings/**
 node_modules
-wwwroot/**/**.js  
-wwwroot/**/**.css 
+wwwroot/App/**/**.js  
+wwwroot/libs/**/**.js 
+wwwroot/libs/**/**.css  
 **/*npm-debug.log.*
 bin

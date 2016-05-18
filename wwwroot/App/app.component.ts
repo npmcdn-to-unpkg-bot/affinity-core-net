@@ -1,9 +1,25 @@
-import {Component} from '@angular/core';
-import {AppMenu} from './app.menu'
+import {Component,OnInit} from '@angular/core'; 
+import { ROUTER_DIRECTIVES, ROUTER_PROVIDERS, Routes, Router } from '@angular/router';
+
+import {Home} from './app.home'
+import {Dashboard} from './dashboard.component'
 
 @Component({
     selector: 'my-app',
-    directives: [AppMenu],
-    template: '<h1>My First Angular 2 App Exemplo <my-menu></my-menu></h1>'
+    directives: [ROUTER_DIRECTIVES],
+    providers: [ROUTER_PROVIDERS],
+    templateUrl: 'ng2-views/app.component.html'
 })
-export class AppComponent { }
+@Routes([ 
+  {path: '/home', component: Home},
+  {path: '/dashboard',component: Dashboard}
+])
+export class AppComponent implements OnInit { 
+    constructor(private router: Router){
+        
+    }
+    
+    ngOnInit() {
+    this.router.navigate(['/home']);
+    } 
+}
