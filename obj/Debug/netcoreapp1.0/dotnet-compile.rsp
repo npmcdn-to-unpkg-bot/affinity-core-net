@@ -1,5 +1,5 @@
---temp-output:c:\Users\renan\Desktop\affinity-core\obj\Debug\netcoreapp1.0\
---out:c:\Users\renan\Desktop\affinity-core\bin\Debug\netcoreapp1.0\affinity-core.dll
+--temp-output:C:\Users\renan\Desktop\affinity-core-net\obj\Debug\netcoreapp1.0\
+--out:C:\Users\renan\Desktop\affinity-core-net\bin\Debug\netcoreapp1.0\affinity-core-net.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -8,7 +8,7 @@
 --suppress-warning:CS1705
 --optimize:False
 --emit-entry-point:True
---output-name:affinity-core
+--output-name:affinity-core-net
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -253,10 +253,10 @@
 --reference:C:\Users\renan\.nuget\packages\System.Threading.Timer\4.0.1-rc2-24027\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\renan\.nuget\packages\System.Xml.ReaderWriter\4.0.11-rc2-24027\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\renan\.nuget\packages\System.Xml.XDocument\4.0.11-rc2-24027\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"c:\Users\renan\Desktop\affinity-core\obj\Debug\netcoreapp1.0\affinity-coredotnet-compile.deps.json",affinity-core.deps.json
-c:\Users\renan\Desktop\affinity-core\Program.cs
-c:\Users\renan\Desktop\affinity-core\Startup.cs
-c:\Users\renan\Desktop\affinity-core\Controllers\HomeController.cs
-c:\Users\renan\Desktop\affinity-core\Services\IEmailSender.cs
-c:\Users\renan\Desktop\affinity-core\Services\ISmsSender.cs
-c:\Users\renan\Desktop\affinity-core\Services\MessageServices.cs
+--resource:"C:\Users\renan\Desktop\affinity-core-net\obj\Debug\netcoreapp1.0\affinity-core-netdotnet-compile.deps.json",affinity-core-net.deps.json
+C:\Users\renan\Desktop\affinity-core-net\Program.cs
+C:\Users\renan\Desktop\affinity-core-net\Startup.cs
+C:\Users\renan\Desktop\affinity-core-net\Controllers\HomeController.cs
+C:\Users\renan\Desktop\affinity-core-net\Services\IEmailSender.cs
+C:\Users\renan\Desktop\affinity-core-net\Services\ISmsSender.cs
+C:\Users\renan\Desktop\affinity-core-net\Services\MessageServices.cs

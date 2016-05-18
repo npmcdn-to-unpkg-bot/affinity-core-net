@@ -8,7 +8,8 @@
         "tsc": "tsc",
         "tsc:w": "tsc -w",
         "typings": "typings",
-        "start": "tsc && concurrently \"bower install\" \"gulp scriptsNStyles\" \"tsc -w\" \"dotnet run\""
+        "prestart": "concurrently  \"dotnet restore\" \"gulp scriptsNStyles\"",
+        "start": "tsc && concurrently  \"tsc -w\" \"dotnet run\""
     },
     "bugs": {
         "url": "https://github.com/recapix/affinity-core-net/issues"
@@ -21,20 +22,22 @@
     "author": "Renan Marcel Paulino Leite <renan.leite@globo.com>",
     "license": "ISC",
     "devDependencies": {
-        "concurrently": "^2.0.0",
-        "typescript": "^1.8.10",
-        "gulp": "^3.9.1",
         "bower": "^1.7.9",
-        "path": "^0.12.7",
-        "gulp-clean": "^0.3.2",
         "canonical-path": "0.0.2",
-        "lodash": "^4.11.1",
+        "concurrently": "^2.0.0",
         "fs": "^0.0.2",
+        "gulp": "^3.9.1",
+        "gulp-clean": "^0.3.2",
         "gulp-concat": "^2.6.0",
+        "gulp-cssmin": "^0.1.7",
         "gulp-typescript": "^2.13.1",
+        "gulp-uglify": "^1.5.3",
         "lite-server": "^2.2.0",
-        "typings": "^0.8.1",
-        "rimraf": "^2.5.2"
+        "lodash": "^4.11.1",
+        "path": "^0.12.7",
+        "rimraf": "^2.5.2",
+        "typescript": "^1.8.10",
+        "typings": "^0.8.1"
     },
     "dependencies": {
         "bootstrap": "^3.3.6",

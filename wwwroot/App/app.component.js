@@ -9,13 +9,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var app_menu_1 = require('./app.menu');
 var AppComponent = (function () {
     function AppComponent() {
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular 2 App</h1>'
+            directives: [app_menu_1.AppMenu],
+            template: '<h1>My First Angular 2 App Exemplo <my-menu></my-menu></h1>'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
