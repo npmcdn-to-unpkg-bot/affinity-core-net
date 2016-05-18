@@ -1,0 +1,6 @@
+typings/**
+node_modules
+wwwroot/**/**.js  
+wwwroot/**/**.css 
+**/*npm-debug.log.*
+bin
